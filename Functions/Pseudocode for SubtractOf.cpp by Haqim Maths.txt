@@ -1,0 +1,22 @@
+// Pseudocode for SubtractOf.cpp by Haqim Maths
+// 2024, December 17th
+
+START PROGRAM
+
+INCLUDE "iostream"
+
+FUNCTION subtractOf(a, b)
+ RETURN a - b
+END FUNCTION
+
+PROCEDURE main(argc, argv)
+ // Declare and initialise variables
+ DECLARE CONSTANT FLOAT a AND SET a TO 20.122
+ DECLARE CONSTANT FLOAT b AND SET b TO 19.2812
+ DECLARE FLOAT result AND SET result TO call subtractOf(a,b)
+ // Print the result
+ PRINT "The result: " + result
+ PRINT NEW LINE
+END PROCEDURE
+
+END PROGRAM
