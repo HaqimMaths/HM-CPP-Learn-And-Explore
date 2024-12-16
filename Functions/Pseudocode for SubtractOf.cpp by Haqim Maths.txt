@@ -3,7 +3,7 @@
 
 START PROGRAM
 
-INCLUDE "iostream"
+INCLUDE iostream
 
 FUNCTION subtractOf(a, b)
  RETURN a - b
