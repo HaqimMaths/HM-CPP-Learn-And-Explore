@@ -1,10 +1,10 @@
 // Pseudocode InputName.cpp by Haqim Maths
 // 2024, December 16th
 
-INCLUDE iostream
-INCLUDE string
+START PROGRAM
 
-START
+INCLUDE iostream
+INCLUDE string"
 
   PROCEDURE main(INT argc, CHAR **argv)
    // Declare variables
@@ -40,4 +40,4 @@ START
    PRINT NEW LINE
   END PROCEDURE
 
-END
+END PROGRAM
