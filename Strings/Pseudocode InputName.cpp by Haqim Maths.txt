@@ -1,0 +1,43 @@
+// Pseudocode InputName.cpp by Haqim Maths
+// 2024, December 16th
+
+INCLUDE iostream
+INCLUDE string
+
+START
+
+  PROCEDURE main(INT argc, CHAR **argv)
+   // Declare variables
+   DECLARE STRING firstName
+   DECLARE STRING lastName
+   // Input and initialize the values
+   PRINT "Enter your first name: "
+   INPUT firstName
+   PRINT "Enter your last name: "
+   INPUT lastName
+   // User name in input
+   PRINT "Your name based on your input: " + firstName + " " + lastName
+   PRINT NEW LINE
+   // To lower case
+   PRINT "Your name in lower case: "
+   PRINT NEW LINE
+   FOR UNSIGNED INT i FROM 0 TO length of firstName - 1 INCREMENT i DO
+    SET firstName[i] TO TOLOWER(firstName[i])
+   END FOR
+   FOR UNSIGNED INT i FROM 0 TO length of lastName - 1 INCREMENT i DO
+    SET lastName[i] TO TOLOWER(lastName[i])
+   END FOR
+   PRINT firstName + " " + lastName
+   // To upper case
+   PRINT "Your name in upper case: "
+   FOR UNSIGNED INT i FROM 0 TO length of firstName - 1 INCREMENT i DO
+    SET firstName[i] TO TOUPPER(firstName[i])
+   END FOR
+   FOR UNSIGNED INT i FROM 0 TO length of lastName - 1 INCREMENT i DO
+    SET lastName[i] TO TOUPPER(lastName[i])
+   END FOR
+   PRINT firstName + " " + lastName
+   PRINT NEW LINE
+  END PROCEDURE
+
+END
