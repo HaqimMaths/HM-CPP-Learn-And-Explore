@@ -1,0 +1,23 @@
+// LoopThroughArray.cpp Psueodocode by Haqim Maths
+// December 16th, 2024
+
+PROCEDURE main(int argc, char **argv)
+ DECLARE integer 1D array x with elements of {1,2,3,4,5,6,7,8,9,10}
+ DECLARE integer sizeOfX
+ SET sizeOfX TO sizeof(x) / sizeof(x[0])
+ PRINT "Size of the array: " + sizeOfX
+ // Traditional for loop
+ PRINT "Traditional for loop array"
+ PRINT new line
+ FOR i FROM 0 TO sizeOfX INCREMENT i DO
+  PRINT x[i] + " "
+ END FOR
+ PRINT new line
+ // For each loop (modern for loop)
+ PRINT "For each loop array"
+ PRINT new line
+ FOR EACH num IN x DO
+  PRINT num + " "
+ END FOR
+ PRINT new line
+END PROCEDURE
