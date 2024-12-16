@@ -3,7 +3,7 @@
 
 START PROGRAM
 
-INCLUDE "iostream"
+INCLUDE iostream
 
 // User defined function
 FUNCTION sumOf(x, y)
