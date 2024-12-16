@@ -1,0 +1,23 @@
+//Pseudocode for SumOf.cpp by Haqim Maths
+// 2024, December 17th
+
+START
+
+INCLUDE "iostream"
+
+// User defined function
+PROCEDURE sumOf(x, y)
+ RETURN x + y
+END PROCEDURE
+
+// The main function
+PROCEDURE main(argc, argv)
+ // Declare and initialize variables
+ DECLARE SIGNED INT x AND SET x TO 10
+ DECLARE SIGNED INT y AND SET y TO 20
+ // Print and call function
+ PRINT "The result of x (10) + y (20) is: " + CALL sumOf(x, y)
+ PRINT NEW LINE
+END PROCEDURE
+
+END PROGRAM
