@@ -6,9 +6,9 @@ START
 INCLUDE "iostream"
 
 // User defined function
-PROCEDURE sumOf(x, y)
+FUNCTION sumOf(x, y)
  RETURN x + y
-END PROCEDURE
+END FUNCTION
 
 // The main function
 PROCEDURE main(argc, argv)
