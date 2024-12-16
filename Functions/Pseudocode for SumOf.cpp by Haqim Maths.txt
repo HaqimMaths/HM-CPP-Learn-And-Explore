@@ -1,7 +1,7 @@
 //Pseudocode for SumOf.cpp by Haqim Maths
 // 2024, December 17th
 
-START
+START PROGRAM
 
 INCLUDE "iostream"
 
