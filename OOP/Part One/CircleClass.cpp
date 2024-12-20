@@ -23,7 +23,7 @@ class Circle{
    return 2 * HMath::PI * this->radius;
   }
   double calculateArea(){
-   return HMath::PI * powerOf(this->radius, 2);
+   return HMath::PI * HMath::powerOf(this->radius, 2);
   }
 };
 
