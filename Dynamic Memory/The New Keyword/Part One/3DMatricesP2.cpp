@@ -2,15 +2,25 @@
   Section: Dynamic Arrays Exercises (Part One)
   Title: Create a 3D Matrices with random elements using dynamic memory allocation
   Developed By: Haqim Maths
-  Date: 2024, December 26th
+  Date: 2024, December 27th (Modified)
 */
 
 #include <iostream>
 #include <random>
 #include <thread>
 #include <chrono>
+#include <typeinfo>
 
 const int SIZE = 5;
+
+template<typename D>
+unsigned int calculateNumberOfDimensions(D){
+  return 0;
+}
+template<typename D>
+unsigned int calculateNumberOfDimensions(D* matrices){
+  return 1 + calculateNumberOfDimensions(*matrices);
+}
 
 void timer(int seconds) {
   std::this_thread::sleep_for(std::chrono::seconds(seconds)); //std::cout << "Timer finished: " << seconds << " seconds elapsed." << std::endl; 
@@ -38,6 +48,7 @@ int main(int argc, char **argv){
       }
     }
   }
+  unsigned int numberOfDimension {calculateNumberOfDimensions(matriceOne)};
   std::cout << "Outputing matriceOne:" << std::endl;
   std::cout << "[" << std::endl;
   for(size_t i = 0; i < SIZE; i++){
@@ -56,5 +67,15 @@ int main(int argc, char **argv){
     std::cout << "  ]," << std::endl;
   }
   std::cout << "]" << std::endl;
+  std::cout << "Number of dimensions: " << numberOfDimension << std::endl;
+  std::cout << "Deallocating memory...." << std::endl;
+  timer(2);
+  for(size_t i = 0; i < SIZE; i++){
+    for(size_t j = 0; j < SIZE; j++){
+      delete[] matriceOne[i][j];
+    }
+    delete[] matriceOne[i];
+  }
+  delete[] matriceOne;
   return 0;
 }
